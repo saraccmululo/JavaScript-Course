@@ -3,10 +3,11 @@ function verificar(){
     var ano=date.getFullYear()
     var anodigitado = document.getElementById('txtano')
     var res = document.querySelector('div#res')
-    if (anodigitado.value.length ==0||Number(anodigitado.value)>ano){
+    if (anodigitado.value.length==0||Number(anodigitado.value)>ano){
         window.alert('[Erro] Verifique os dados e tente novamente!')
     }else{
         var fsex=document.getElementsByName ('radsex')
+        console.log(fsex)
         var idade = ano - Number (anodigitado.value)
         res.innerHTML = `Idade calculada: ${idade}`
         var genero =''
