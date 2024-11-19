@@ -12,17 +12,16 @@
     </header>
     <section>
         <div>
-            <p><label for="txtn">Número (entre 1 e 100):</label>
+            <label for="txtn">Número (entre 1 e 100):</label>
                 <input type="number" name="txtn" id="txtn">
-                <input type="button" value="Adicionar" onclick="Adicionar()">
-            </p>
+                <input type="button" value="Adicionar" onclick="adicionar()">
+                <select name="flista" id="flista" size="6"></select> 
+                <input type="button" value="Finalizar" id="bfinal" onclick="finalizar()">
+           
         </div>
 
-        <div>
-            <select name="resultado" id="resultado" size="6">
-                <option>Digite um número acima</option> 
-                <p><input type="button" value="Finalizar" id="bfinal" onclick="Finalizar()"></p>
-            </select> 
+        <div id="res">
+            Resultado
         </div>
     </section>
     <footer>
@@ -30,4 +29,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 

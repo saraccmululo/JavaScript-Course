@@ -21,6 +21,11 @@ div{
    text-align: left;
     padding: 8px;
 }
+select{
+    width: 150px;
+    margin: 10px 0px 0px 0px;
+}
+
 input#bfinal{
     display: block;
 }
